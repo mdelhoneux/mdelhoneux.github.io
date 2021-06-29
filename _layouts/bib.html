@@ -2,17 +2,8 @@
 ---
 
 <div class="row">
-  <div class="col-sm-2 abbr">
-  {% if entry.abbr %}
-    {% if site.data.venues[entry.abbr] %}
-    <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}" target="_blank">{{entry.abbr}}</a></abbr>
-    {% else %}
-    <abbr class="badge">{{entry.abbr}}</abbr>
-    {% endif %}
-  {% endif %}
-  </div>
 
-  <div id="{{entry.key}}" class="col-sm-8">
+  <div id="{{entry.key}}" class="col-sm-11">
     {% if entry.type == "thesis" %}
       {{reference}}
     {% else %}
@@ -37,29 +28,29 @@
           
           {% if forloop.length == 1 %}
             {% if author_is_self %}
-              <em>{{author.last}}, {{author.first}}</em>
+              <em>{{author.first}} {{author.last}}</em>
             {% else %}
-              {{author.last}}, {{author.first}}
+              {{author.first}} {{author.last}}
             {% endif %}
           {% else %}
             {% unless forloop.last %}
               {% if author_is_self %}
-                <em>{{author.last}}, {{author.first}}</em>,
+                <em>{{author.first}} {{author.last}}</em>,
               {% else %}
                 {% if coauthor_url %}
-                  <a href="{{coauthor_url}}" target="_blank">{{author.last}}, {{author.first}}</a>,
+                  <a href="{{coauthor_url}}" target="_blank">{{author.first}} {{author.last}}</a>,
                 {% else %}
-                  {{author.last}}, {{author.first}},
+                  {{author.first}} {{author.last}},
                 {% endif %}
               {% endif %}
             {% else %}
               {% if author_is_self %}
-                and <em>{{author.last}}, {{author.first}}</em>
+                and <em>{{author.first}} {{author.last}}</em>
               {% else %}
                 {% if coauthor_url %}
-                  and <a href="{{coauthor_url}}" target="_blank">{{author.last}}, {{author.first}}</a>
+                  and <a href="{{coauthor_url}}" target="_blank">{{author.first}} {{author.last}}</a>
                 {% else %}
-                  and {{author.last}}, {{author.first}}
+                  and {{author.first}} {{author.last}}
                 {% endif %}
               {% endif %}
             {% endunless %}
@@ -69,9 +60,9 @@
 
       <div class="periodical">
       {% if entry.type == "article" %}
-        <em>{{entry.journal}}</em>
+        <em>{{entry.journal}}</em>,
       {% elsif entry.type == "inproceedings" %}
-        <em>In {{entry.booktitle}}</em>
+        In <em>{{entry.booktitle}}</em>,
       {% endif %}
       {% if entry.year %}
         {{entry.year}}
@@ -80,14 +71,15 @@
     {% endif %}
 
     <div class="links">
+
+    {% if entry.url %}
+      <a href="{{entry.url}}" class="btn btn-sm z-depth-0" role="button" target="_blank">URL</a>
+    {% endif %}
     {% if entry.abstract %}
       <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
     {% endif %}
     {% if entry.arxiv %}
       <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button" target="_blank">arXiv</a>
-    {% endif %}
-    {% if entry.bibtex_show %}
-        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
     {% endif %}
     {% if entry.html %}
       <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button" target="_blank">HTML</a>
@@ -112,6 +104,9 @@
     {% if entry.code %}
       <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
     {% endif %}
+    {% if entry.video %}
+      <a href="{{ entry.video }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Video</a>
+    {% endif %}
     {% if entry.poster %}
       {% if entry.poster contains '://' %}
       <a href="{{ entry.poster }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Poster</a>
@@ -129,6 +124,13 @@
     {% if entry.website %}
       <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Website</a>
     {% endif %}
+    {% if entry.type != "misc" %}
+        <a class="bibtex btn btn-sm z-depth-0" role="button">bibtex</a>
+    {% endif %}
+    {% if entry.livetweet %}
+      <a href="{{ entry.livetweet }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Live-tweet</a>
+    {% endif %}
+
     </div>
 
     <!-- Hidden abstract block -->
@@ -137,11 +139,9 @@
       <p>{{ entry.abstract }}</p>
     </div>
     {% endif %}
-
-    <!-- Hidden bibtex block -->
-    {% if entry.bibtex_show %}
+    {% if entry.type != "misc" %}
     <div class="bibtex hidden">
-      {% highlight bibtex %}{{ entry.bibtex }}{% endhighlight %}
+    <p>{{ entry.bibtex }}</p>
     </div>
     {% endif %}
   </div>

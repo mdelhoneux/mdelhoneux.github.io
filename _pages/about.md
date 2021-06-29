@@ -2,23 +2,24 @@
 layout: about
 title: about
 permalink: /
-description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
+description: Computational Linguist
 
 profile:
   align: right
   image: prof_pic.jpg
-  address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  address:
 
-news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+news: false  # includes a list of news items
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi 👋 , I am Miryam (she/her), a Computational Linguistics researcher. I am currently funded by an international postdoc grant from the [Swedish Research Council](http://vr.se), for which I am affiliated with the [Computational Linguistics group](http://cl.lingfil.uu.se/people) at [Uppsala University](http://uu.se) in Sweden 🇸🇪 , the [Language Intelligence & Information Retrieval Lab (LIIR)](https://liir.cs.kuleuven.be/) at [KU Leuven](http://kuleuven.be) in Belgium 🇧🇪, the [CopeNLU](http://www.copenlu.com/) and the [CoAStAL](http://coastalcph.github.io/) groups at the [University of Copenhagen](https://www.ku.dk/) in Denmark 🇩🇰. My project is about typologically informed dependency parsing. 
+<br>
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I obtained a PhD in Computational Linguistics at Uppsala University and before that, I got an MSc degree in Artificial Intelligence at [the University of Edinburgh](https://www.ed.ac.uk/) in Scotland 🏴󠁧󠁢󠁳󠁣󠁴󠁿
+and a BA and MA in languages and literatures at [UCLouvain](https://uclouvain.be/) in Belgium.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/){:target="\_blank"} and [Academicons](https://jpswalsh.github.io/academicons/){:target="\_blank"}, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My research interests are centered around three main themes in the domain of AI and language: **syntactic parsing**, **typology** and **interpretability**. I find syntactic parsing an exciting area because it allows exploring interesting linguistic phenomena while working on a system that is central to NLP and useful to many applications. I find it important to develop models that work for typologically diverse languages and I find it interesting to study the interaction between language technology and typology. I finally find it important to go beyond building models that function as a black box and reason about what they are learning and why. I have combined all of these interests in my PhD  where I investigated linguistically informed models of syntactic parsing for typologically diverse languages. My PhD thesis is available [here](http://cl.lingfil.uu.se/~miryam/papers/thesis.pdf).
+
+When I'm not busy with work things, I enjoy watching and playing football, trying new beers or hiking in the nature, preferably in the mountains.

@@ -1,0 +1,265 @@
+@inproceedings{delhoneux16should,
+    author =        {{de Lhoneux}, Miryam and Nivre, Joakim},
+    booktitle =     {Proc. of the Workshop on Multilingual and
+                     Cross-lingual Methods in NLP},
+    pages =         {10--19},
+    publisher =     {Association for Computational Linguistics},
+    title =         {{Should Have, Would Have, Could Have. Investigating
+                     Verb Group Representations for Parsing with Universal
+                     Dependencies.}},
+    year =          {2016},
+    poster = "MLCL16_poster.pdf",
+    
+    doi =           {10.18653/v1/W16-1202},
+}
+
+@inproceedings{delhoneux17old,
+    author =        {{de Lhoneux}, Miryam and Stymne, Sara and
+                     Nivre, Joakim},
+    booktitle =     {TLT },
+    title =         {{Old School vs. New School: Comparing Transition-Based
+                     Parsers with and without Neural Network Enhancement.}},
+    url =           {http://ceur-ws.org/Vol-1779/08delhoneux.pdf},
+    year =          {2017},
+    slides = "TLT15_slides.pdf",
+    pages =         {99--110}
+}
+
+@inproceedings{delhoneux17raw,
+    title = "From Raw Text to Universal Dependencies - Look, No Tags!",
+    author = "{de Lhoneux}, Miryam  and
+    Shao, Yan  and
+    Basirat, Ali  and
+    Kiperwasser, Eliyahu  and
+    Stymne, Sara  and
+    Goldberg, Yoav  and
+    Nivre, Joakim",
+    booktitle = "Proc. of the {C}o{NLL} 2017 Shared Task",
+    poster = "uu_conll17.pdf",
+    month = aug,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/K17-3022",
+    doi = "10.18653/v1/K17-3022",
+    pages = "207--217",
+    url = "https://github.com/UppsalaNLP/uuparser",
+    abstract = "We present the Uppsala submission to the CoNLL 2017 shared task on parsing from raw text to universal dependencies. Our system is a simple pipeline consisting of two components. The first performs joint word and sentence segmentation on raw text; the second predicts dependency trees from raw words. The parser bypasses the need for part-of-speech tagging, but uses word embeddings based on universal tag distributions. We achieved a macro-averaged LAS F1 of 65.11 in the official test run, which improved to 70.49 after bug fixes. We obtained the 2nd best result for sentence segmentation with a score of 89.03.",
+}
+
+@inproceedings{delhoneux17arc,
+    title = "Arc-Hybrid Non-Projective Dependency Parsing with a Static-Dynamic Oracle",
+    author = "{de Lhoneux}, Miryam  and
+    Stymne, Sara  and
+    Nivre, Joakim",
+    booktitle = "IWPT",
+    month = sep,
+    year = "2017",
+    address = "Pisa, Italy",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/W17-6314",
+    code = "https://github.com/UppsalaNLP/uuparser",
+    pages = "99--104",
+    slides = "IWPT2017_slides.pdf",
+    abstract = "In this paper, we extend the arc-hybrid system for transition-based parsing with a swap transition that enables reordering of the words and construction of non-projective trees. Although this extension breaks the arc-decomposability of the transition system, we show how the existing dynamic oracle for this system can be modified and combined with a static oracle only for the swap transition. Experiments on 5 languages show that the new system gives competitive accuracy and is significantly better than a system trained with a purely static oracle.",
+}
+
+@inproceedings{smith2018st,
+    title = "82 Treebanks, 34 Models: Universal Dependency Parsing with Multi-Treebank Models",
+    author = "Smith, Aaron  and
+    Bohnet, Bernd  and
+    {de Lhoneux}, Miryam  and
+    Nivre, Joakim  and
+    Shao, Yan  and
+    Stymne, Sara",
+    booktitle = "Proc. of the {C}o{NLL} 2018 Shared Task",
+    month = oct,
+    year = "2018",
+    address = "Brussels, Belgium",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/K18-2011",
+    doi = "10.18653/v1/K18-2011",
+    pages = "113--123",
+    abstract = "We present the Uppsala system for the CoNLL 2018 Shared Task on universal dependency parsing. Our system is a pipeline consisting of three components: the first performs joint word and sentence segmentation; the second predicts part-of-speech tags and morphological features; the third predicts dependency trees from words and tags. Instead of training a single parsing model for each treebank, we trained models with multiple treebanks for one language or closely related languages, greatly reducing the number of models. On the official test run, we ranked 7th of 27 teams for the LAS and MLAS metrics. Our system obtained the best scores overall for word segmentation, universal POS tagging, and morphological features.",
+}
+
+@inproceedings{delhoneux18parameter,
+    author =        {{de Lhoneux}, Miryam and Bjerva, Johannes and
+                     Augenstein, Isabelle and S{\o}gaard, Anders},
+    booktitle =     {EMNLP
+                     },
+    pages =         {4992--4997},
+    publisher =     {Association for Computational Linguistics},
+    title =         {Parameter sharing between dependency parsers for
+                     related languages},
+    year =          {2018},
+    poster = "emnlp_parameter_sharing",
+    url =           {http://aclweb.org/anthology/D18-1543},
+}
+
+@inproceedings{delhoneux19recursive,
+    title = "Recursive Subtree Composition in {LSTM}-Based Dependency Parsing",
+    author = "{de Lhoneux}, Miryam  and
+    Ballesteros, Miguel  and
+    Nivre, Joakim",
+    booktitle = "NAACL",
+    month = jun,
+    year = "2019",
+    address = "Minneapolis, Minnesota",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/N19-1159",
+    doi = "10.18653/v1/N19-1159",
+    pages = "1566--1576",
+    livetweet="https://twitter.com/amirieb/status/1135913233657675780",
+    slides = "naacl_19_slides.pdf",
+    video = "https://vimeo.com/364704101",
+    code = "https://github.com/mdelhoneux/uuparser-composition",
+    abstract = "The need for tree structure modelling on top of sequence modelling is an open issue in neural dependency parsing. We investigate the impact of adding a tree layer on top of a sequential model by recursively composing subtree representations (composition) in a transition-based parser that uses features extracted by a BiLSTM. Composition seems superfluous with such a model, suggesting that BiLSTMs capture information about subtrees. We perform model ablations to tease out the conditions under which composition helps. When ablating the backward LSTM, performance drops and composition does not recover much of the gap. When ablating the forward LSTM, performance drops less dramatically and composition recovers a substantial part of the gap, indicating that a forward LSTM and composition capture similar information. We take the backward LSTM to be related to lookahead features and the forward LSTM to the rich history-based features both crucial for transition-based parsers. To capture history-based information, composition is better than a forward LSTM on its own, but it is even better to have a forward LSTM as part of a BiLSTM. We correlate results with language properties, showing that the improved lookahead of a backward LSTM is especially important for head-final languages.",
+}
+
+
+@inproceedings{smith18investigation,
+    title = "An Investigation of the Interactions Between Pre-Trained Word Embeddings, Character Models and {POS} Tags in Dependency Parsing",
+    author = "Smith, Aaron  and
+    {de Lhoneux}, Miryam  and
+    Stymne, Sara  and
+    Nivre, Joakim",
+    booktitle = "EMNLP",
+    month = oct # "-" # nov,
+    year = "2018",
+    address = "Brussels, Belgium",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/D18-1291",
+    doi = "10.18653/v1/D18-1291",
+    pages = "2711--2720",
+    abstract = "We provide a comprehensive analysis of the interactions between pre-trained word embeddings, character models and POS tags in a transition-based dependency parser. While previous studies have shown POS information to be less important in the presence of character models, we show that in fact there are complex interactions between all three techniques. In isolation each produces large improvements over a baseline system using randomly initialised word embeddings only, but combining them quickly leads to diminishing returns. We categorise words by frequency, POS tag and language in order to systematically investigate how each of the techniques affects parsing quality. For many word categories, applying any two of the three techniques is almost as good as the full combined system. Character models tend to be more important for low-frequency open-class words, especially in morphologically rich languages, while POS tags can help disambiguate high-frequency function words. We also show that large character embedding sizes help even for languages with small character sets, especially in morphologically rich languages.",
+}
+
+@inproceedings{kulmizev19deep,
+    title = "Deep Contextualized Word Embeddings in Transition-Based and Graph-Based Dependency Parsing - A Tale of Two Parsers Revisited",
+    author = "Kulmizev, Artur  and
+    {de Lhoneux}, Miryam  and
+    Gontrum, Johannes  and
+    Fano, Elena  and
+    Nivre, Joakim",
+    booktitle = "EMNLP-IJCNLP",
+    month = nov,
+    year = "2019",
+    address = "Hong Kong, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/D19-1277",
+    doi = "10.18653/v1/D19-1277",
+    pages = "2755--2768",
+    abstract = "Transition-based and graph-based dependency parsers have previously been shown to have complementary strengths and weaknesses: transition-based parsers exploit rich structural features but suffer from error propagation, while graph-based parsers benefit from global optimization but have restricted feature scope. In this paper, we show that, even though some details of the picture have changed after the switch to neural networks and continuous representations, the basic trade-off between rich features and global optimization remains essentially the same. Moreover, we show that deep contextualized word embeddings, which allow parsers to pack information about global sentence structure into local feature representations, benefit transition-based parsers more than graph-based parsers, making the two approaches virtually equivalent in terms of both accuracy and error profile. We argue that the reason is that these representations help prevent search errors and thereby allow transition-based parsers to better exploit their inherent strength of making accurate local decisions. We support this explanation by an error analysis of parsing experiments on 13 languages.",
+}
+
+@inproceedings{sogaard18nightmare,
+    title = "Nightmare at test time: How punctuation prevents parsers from generalizing",
+    author = "S{\o}gaard, Anders  and
+    {de Lhoneux}, Miryam  and
+    Augenstein, Isabelle",
+    booktitle = "Proc. of the 2018 {EMNLP} Workshop {B}lackbox{NLP}: Analyzing and Interpreting Neural Networks for {NLP}",
+    month = nov,
+    year = "2018",
+    address = "Brussels, Belgium",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/W18-5404",
+    doi = "10.18653/v1/W18-5404",
+    pages = "25--29",
+    abstract = "Punctuation is a strong indicator of syntactic structure, and parsers trained on text with punctuation often rely heavily on this signal. Punctuation is a diversion, however, since human language processing does not rely on punctuation to the same extent, and in informal texts, we therefore often leave out punctuation. We also use punctuation ungrammatically for emphatic or creative purposes, or simply by mistake. We show that (a) dependency parsers are sensitive to \textit{both} absence of punctuation and to alternative uses; (b) neural parsers tend to be more sensitive than vintage parsers; (c) training neural parsers \textit{without} punctuation outperforms all out-of-the-box parsers across all scenarios where punctuation departs from standard punctuation. Our main experiments are on synthetically corrupted data to study the effect of punctuation in isolation and avoid potential confounds, but we also show effects on out-of-domain data.",
+}
+
+@inproceedings{stymne18parser,
+    title = "Parser Training with Heterogeneous Treebanks",
+    author = "Stymne, Sara  and
+    {de Lhoneux}, Miryam  and
+    Smith, Aaron  and
+    Nivre, Joakim",
+    booktitle = "ACL",
+    month = jul,
+    year = "2018",
+    address = "Melbourne, Australia",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/P18-2098",
+    doi = "10.18653/v1/P18-2098",
+    pages = "619--625",
+    abstract = "How to make the most of multiple heterogeneous treebanks when training a monolingual dependency parser is an open question. We start by investigating previously suggested, but little evaluated, strategies for exploiting multiple treebanks based on concatenating training sets, with or without fine-tuning. We go on to propose a new method based on treebank embeddings. We perform experiments for several languages and show that in many cases fine-tuning and treebank embeddings lead to substantial improvements over single treebanks or concatenation, with average gains of 2.0{--}3.5 LAS points. We argue that treebank embeddings should be preferred due to their conceptual simplicity, flexibility and extensibility.",
+}
+
+@inproceedings{hershcovich20koepsala,
+  title = "{K}{\o}psala: Transition-Based Graph Parsing via Efficient Training and Effective Encoding",
+  author = "Hershcovich, Daniel  and
+  {de Lhoneux}, Miryam  and
+  Kulmizev, Artur  and
+  Pejhan, Elham  and
+  Nivre, Joakim",
+  booktitle = "Proceedings of the 16th International Conference on Parsing Technologies and the IWPT 2020 Shared Task on Parsing into Enhanced Universal Dependencies",
+  month = jul,
+  year = "2020",
+  address = "Online",
+  publisher = "Association for Computational Linguistics",
+  url = "https://www.aclweb.org/anthology/2020.iwpt-1.25",
+  doi = "10.18653/v1/2020.iwpt-1.25",
+  pages = "236--244",
+  abstract = "We present K{\o}psala, the Copenhagen-Uppsala system for the Enhanced Universal Dependencies Shared Task at IWPT 2020. Our system is a pipeline consisting of off-the-shelf models for everything but enhanced graph parsing, and for the latter, a transition-based graph parser adapted from Che et al. (2019). We train a single enhanced parser model per language, using gold sentence splitting and tokenization for training, and rely only on tokenized surface forms and multilingual BERT for encoding. While a bug introduced just before submission resulted in a severe drop in precision, its post-submission fix would bring us to 4th place in the official ranking, according to average ELAS. Our parser demonstrates that a unified pipeline is effective for both Meaning Representation Parsing and Enhanced Universal Dependencies.",
+}
+
+@inproceedings{hershcovich-etal-2020-comparison,
+    title = "Comparison by Conversion: Reverse-Engineering {UCCA} from Syntax and Lexical Semantics",
+    author = "Hershcovich, Daniel  and
+      Schneider, Nathan  and
+      Dvir, Dotan  and
+      Prange, Jakob  and
+      de Lhoneux, Miryam  and
+      Abend, Omri",
+    booktitle = "Proceedings of the 28th International Conference on Computational Linguistics",
+    month = dec,
+    year = "2020",
+    address = "Barcelona, Spain (Online)",
+    publisher = "International Committee on Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2020.coling-main.264",
+    doi = "10.18653/v1/2020.coling-main.264",
+    pages = "2947--2966",
+    abstract = "Building robust natural language understanding systems will require a clear characterization of whether and how various linguistic meaning representations complement each other. To perform a systematic comparative analysis, we evaluate the mapping between meaning representations from different frameworks using two complementary methods: (i) a rule-based converter, and (ii) a supervised delexicalized parser that parses to one framework using only information from the other as features. We apply these methods to convert the STREUSLE corpus (with syntactic and lexical semantic annotations) to UCCA (a graph-structured full-sentence meaning representation). Both methods yield surprisingly accurate target representations, close to fully supervised UCCA parser quality{---}indicating that UCCA annotations are partially redundant with STREUSLE annotations. Despite this substantial convergence between frameworks, we find several important areas of divergence.",
+}
+
+@inproceedings{bollmann-etal-2021-moses,
+    title = "{M}oses and the Character-Based Random Babbling Baseline: {C}o{AS}ta{L} at {A}mericas{NLP} 2021 Shared Task",
+    author = "Bollmann, Marcel  and
+      Aralikatte, Rahul  and
+      Murrieta Bello, H{\'e}ctor  and
+      Hershcovich, Daniel  and
+      {de Lhoneux}, Miryam  and
+      S{\o}gaard, Anders",
+    booktitle = "Proceedings of the First Workshop on Natural Language Processing for Indigenous Languages of the Americas",
+    month = jun,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2021.americasnlp-1.28",
+    doi = "10.18653/v1/2021.americasnlp-1.28",
+    pages = "248--254",
+    abstract = "We evaluated a range of neural machine translation techniques developed specifically for low-resource scenarios. Unsuccessfully. In the end, we submitted two runs: (i) a standard phrase-based model, and (ii) a random babbling baseline using character trigrams. We found that it was surprisingly hard to beat (i), in spite of this model being, in theory, a bad fit for polysynthetic languages; and more interestingly, that (ii) was better than several of the submitted systems, highlighting how difficult low-resource machine translation for polysynthetic languages is.",
+}
+
+@article{delhoneux20avc,
+  author = {{{de Lhoneux}}, Miryam and Stymne, Sara and Nivre, Joakim},
+  title = {What Should/Do/Can LSTMs Learn When Parsing Auxiliary Verb Constructions?},
+  journal = {Computational Linguistics},
+  volume = {46},
+  number = {4},
+  pages = {1-22},
+  year = {2020},
+  doi = {10.1162/coli\_a\_00392},
+  poster = "naacl21_poster.pdf",
+  slides = "naacl21.pdf",
+  URL = { 
+         https://doi.org/10.1162/coli_a_00392
+         },
+  eprint = { 
+            https://doi.org/10.1162/coli_a_00392
+            }
+  ,
+  abstract = { There is a growing interest in investigating what neural NLP models learn about language. A prominent open question is the question of whether or not it is necessary to model hierarchical structure. We present a linguistic investigation of a neural parser adding insights to this question. We look at transitivity and agreement information of auxiliary verb constructions (AVCs) in comparison to finite main verbs (FMVs). This comparison is motivated by theoretical work in dependency grammar and in particular the work of Tesnière (1959), where AVCs and FMVs are both instances of a nucleus, the basic unit of syntax. An AVC is a dissociated nucleus, it consists of at least two words, and an FMV is its non-dissociated counterpart, consisting of exactly one word.We suggest that the representation of AVCs and FMVs should capture similar information. We use diagnostic classifiers to probe agreement and transitivity information in vectors learned by a transition-based neural parser in four typologically different languages. We find that the parser learns different information about AVCs and FMVs if only sequential models (BiLSTMs) are used in the architecture but similar information when a recursive layer is used. We find explanations for why this is the case by looking closely at how information is learned in the network and looking at what happens with different dependency representations of AVCs. We conclude that there may be benefits to using a recursive layer in dependency parsing and that we have not yet found the best way to integrate it in our parsers. }
+}
+
