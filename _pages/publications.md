@@ -51,6 +51,5 @@ nav: true
       <ul>
 		  <li> Low-resource NLP: Lessons from Dependency Parsing. <a href="https://sigtyp.io/ws2021.html">Sigtyp 2021</a>, 10 June 2021. [<a href="https://www.youtube.com/watch?v=HrzrlhMnde0">video</a>|<a href="/assets/pdf/sigtyp21.pdf">slides</a>]
 		  <li> Parsing Typologically Diverse Languages. Aix Marseille University, 26 Nov 2020.
-		  <li> Parsing Typologically Diverse Languages. Worskhop on Treebanks ang Linguistic
-		  Theories (TLT), 27 October 2020. [<a href="https://t.co/937VFXcpPP">video</a>|<a href="/assets/pdf/tlt_2020_slides.pdf">slides</a>]
+		  <li> Parsing Typologically Diverse Languages. Workshop on <a href="https://tlt2020.phil.hhu.de/">Treebanks ang Linguistic Theories</a> (TLT), 27 October 2020. [<a href="https://t.co/937VFXcpPP">video</a>|<a href="/assets/pdf/tlt_2020_slides.pdf">slides</a>]
           <li> Do we need recursive subtree composition in dependency parsing? Invited talk at the Workshop on Data-driven Approaches to Parsing and Semantic Composition, Tübingen 10 December 2019. [<a href="/assets/pdf/tubingen1219.pdf">slides</a>]
