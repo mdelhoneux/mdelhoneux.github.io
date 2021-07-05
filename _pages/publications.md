@@ -7,7 +7,7 @@ years_theses: [2019, 2014, 2013]
 nav: true
 ---
 
-[publications](/publications#publications) and [talks](/publications#talks) 
+[publications](/~miryam/publications#publications) and [talks](/~miryam/publications#talks) 
 
 <h1 class="category">Publications</h1>
 <span id="publications"></span>
